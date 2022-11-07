@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block content %}
+
+
+<div class='container'>
+    <div class="row">
+        {% for product in object_list %}
+        <div class='col'>
+            {% comment %} <div class='card shadow p-3 mb-5 bg-white rounded'> {% endcomment %}
+
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width:350px">
+                    <img src={{ product.product_image }} style="height: 250px" />
+                    <div class="card-body">
+                      <h4 class="card-title" style="color: blue;">{{ product.product_name }}</h4>
+                      <p class="card-text">{{ product.product_desc}}</p>
+                      <a href="" role="button"  class="hvr-float-shadow btn btn-outline-dark btn-md">${{ product.price }}</a>
+                    </div>
+                  </div>
+{% comment %}
+                <div class='card-body'>
+                    <h3 class='card-title'><a href="">{{ product.product_name }}</a> </h3>
+                     <p class='card-text'> {{ product.product_type }} </p> 
+                    <img src={{ product.product_image }} />
+                    <a href="" role="button"  class="hvr-float-shadow btn btn-outline-dark btn-md">{{ product.price }}</a>
+                    <a href="" class="hvr-float-shadow btn btn-outline-dark btn-md" role='button'>Delete Post</a>
+                </div>{% endcomment %}
+            </div>
+        {% comment %} </div> {% endcomment %}
+        {% endfor %}
+    </div>
+</div>
+<br/>
+
+
+{% endblock %}

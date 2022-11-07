@@ -1,0 +1,87 @@
+header h1 a{
+    color: orange;
+    text-decoration: none;
+}
+header h1 a:hover{
+    color: white;
+}
+body{
+    font-family: 'Source Sans Pro', sans;
+    font-size: 18px;
+    /* padding: 50px 0px 0px 0px; */
+    /* z-index: 0; */
+    /* background-color: black; */
+}
+
+h3 a{
+    text-decoration: none;
+}
+.nav-left{
+    margin-right: auto;
+}
+.nav-right{
+    display: flex;
+    padding-top: 2rem;
+    text-decoration: none;
+}
+
+.post-entry{
+    margin-bottom: 2rem;
+}
+
+.post-entry h2{
+    margin-bottom: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+.post-entry p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.post-entry h2 a:hover{
+    color: red;
+}
+
+.footer {
+    background-color: #C5CBE3;
+    margin: 0px auto;
+    padding: 20px 0px;
+  }
+
+
+  /* image shape */
+.footer-container{
+    height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 390px;
+    /* z-index: -1; */
+    
+}
+.footer-parent{
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    
+}
+.footer-parent img {
+    max-width: 100%;
+    height: 130px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1110px){
+    .footer-parent{
+        display: flex;
+        align-items: flex-end;
+    }
+}
